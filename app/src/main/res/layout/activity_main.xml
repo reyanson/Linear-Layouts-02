@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="150"
+    android:orientation="vertical">
+
+<!--    top one liner layer START (the logo and title)-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="150"
+        android:layout_marginTop="02mm"
+        android:orientation="horizontal"
+
+        >
+
+        <!--    The Logo Image    -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="79dp"
+            app:srcCompat="@drawable/image_02"
+            android:layout_weight="1"
+            />
+
+        <!--   The title     -->
+        <TextView
+            android:text="Software Development"
+            android:layout_width="232dp"
+            android:layout_height="79dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            />
+
+
+    </LinearLayout>
+<!-- the first linear layout END-->
+
+
+<!--  The center image (It is in parent layer)  -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/imageView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/image_01"
+
+        />
+
+<!--  Second Inner Linear Layout START  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10mm"
+        android:orientation="horizontal"
+        >
+
+        <!--    IOS title Text view    -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS"
+            android:layout_alignBottom="@id/imageView2"
+            android:textSize="3mm"
+
+
+            />
+
+        <!--    Android title Text view    -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:layout_alignBottom="@id/imageView2"
+            android:textSize="3mm"
+            android:layout_marginLeft="18mm"
+            android:layout_weight="2"
+
+            />
+
+
+    </LinearLayout>
+    <!-- The second inner END   -->
+
+
+    <!--  3rd inner Linear layout Start   -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2mm"
+        android:orientation="horizontal"
+        >
+
+        <!--   Description about iOS     -->
+        <TextView
+            android:layout_width="28mm"
+            android:layout_height="40mm"
+            android:text="The documents that are displayed on the left
+side of the navigation, detailed how to build an app using a variety of Android API are listed"
+            android:layout_alignBottom="@id/imageView2"
+            android:textSize="3mm"
+
+
+            />
+
+        <!--   Description about Android     -->
+        <TextView
+            android:layout_width="30mm"
+            android:layout_height="40mm"
+
+            android:text="Android is innovative apps and games for the
+mobile terminal can be built in the java language environment provides an application
+framework that fulfilling"
+            android:layout_alignBottom="@id/imageView2"
+            android:textSize="3mm"
+            android:layout_marginLeft="3mm"
+            android:layout_weight="2"
+
+            />
+
+
+
+
+    </LinearLayout>
+    <!--  3rd inner Linear Layout END  -->
+
+    <!--  Register button code  -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#A9A9A9" />
+
+
+
+
+</LinearLayout>
